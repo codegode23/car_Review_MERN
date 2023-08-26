@@ -18,7 +18,8 @@ app.use((req, res, next) => {
     next()
 });
 
-app.use(reviewRoutes)
+//request /api/reviews to be able to access review routes
+app.use('/api/reviews',reviewRoutes)
 
 
 //Listen for request, and display message if successful
