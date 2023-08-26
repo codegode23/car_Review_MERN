@@ -15,3 +15,10 @@
 ## .env file will store all environment variables
 
 ## npm install dotenv - installs the dotenv package. this package loads environment variables feom a .env file into the process .env object, available to us globally in a node js environment
+
+# API ENDPOINTS to interact with the database
+* GET /reviews - Gets all reviews
+* POST /review - Creates a new review
+* GET /review/:id - Get a single review
+* DELETE /review:id - Delete a single review
+* PATCH / review/:id - Update a single review
