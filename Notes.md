@@ -19,3 +19,5 @@
 Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB. We will use it to connect to the database inside the server.js file.
 
 [Reference](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiOy77t5oKBAxV3TEEAHemGBn8QFnoECEEQAw&url=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fintroduction-to-mongoose-for-mongodb-d2a7aa593c57%2F&usg=AOvVaw22o17VmM6Lkp-qWmszgGjM&opi=89978449)
+
+Purpose of the Car.js file in the models folder is to determine the database structure of the app

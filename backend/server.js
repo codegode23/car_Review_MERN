@@ -6,8 +6,8 @@ const express = require('express');
 
 //require the mongoose package. this will help connect to the database
 
-//require reviews routes
-const reviewRoutes = require('./routes/reviews');
+//require cars routes
+const carRoutes = require('./routes/cars');
 const { default: mongoose } = require('mongoose');
 
 // const mongoose = require('mongoose');
@@ -21,8 +21,8 @@ app.use((req, res, next) => {
     next()
 });
 
-//request /api/reviews to be able to access review routes
-app.use('/api/reviews',reviewRoutes)
+//request /api/cars to be able to access car routes
+app.use('/api/cars',carRoutes)
 
 //connect to database
 mongoose.connect(process.env.MONGO_URI)

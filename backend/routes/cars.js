@@ -5,29 +5,29 @@ const express = require('express');
 const router = express.Router()
 
 
-//get all reviews. 
+//get all cars. 
 router.get('/', (req, res) => {
-    res.json({mssg: 'GET all reviews'})
+    res.json({mssg: 'GET all cars'})
 })
 
-//get single review based on id
+//get single car based on id
 router.get('/:id', (req, res) => {
-    res.json({mssg: 'GET single review based on id'})
+    res.json({mssg: 'GET single car based on id'})
 })
 
-//post/create a new review
+//post/create a new car
 router.post('/', (req, res) => {
-    res.json({mssg: 'POST new review'})
+    res.json({mssg: 'POST new car'})
 })
 
-//delete single review based on id
+//delete single car based on id
 router.delete('/:id', (req, res) => {
-    res.json({mssg: 'DELETE review based on id'})
+    res.json({mssg: 'DELETE car based on id'})
 })
 
-//update single review based on id
+//update single car based on id
 router.patch('/:id', (req, res) => {
-    res.json({mssg: 'UPDATE review'})
+    res.json({mssg: 'UPDATE car'})
 })
 
 
