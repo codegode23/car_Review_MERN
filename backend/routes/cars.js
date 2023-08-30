@@ -1,3 +1,6 @@
+//Import car model
+const Car = require('../models/carModel');
+
 //Require the express package
 const express = require('express');
 
@@ -16,8 +19,17 @@ router.get('/:id', (req, res) => {
 })
 
 //post/create a new car
-router.post('/', (req, res) => {
-    res.json({mssg: 'POST new car'})
+router.post('/', async (req, res) => {
+    const {carName, price, purchaseDate} = req.body
+
+    try {
+        const car = await Car.create({carName, price, purchaseDate})
+        res.status(200).json(car)
+    } catch (error) {
+        res.status(400).json({error: error.message})
+    }
+
+    // res.json({mssg: 'POST new car'})
 })
 
 //delete single car based on id
